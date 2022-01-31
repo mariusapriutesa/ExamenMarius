@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ExamenMarius</string>
+    <string name="button">Siguiente</string>
+    <string name="todo">TODO</string>
+    <string name="cantidad_de_pizzas">Cantidad de pizzas</string>
+    <string name="Pizza">Pizza</string>
+    <string name="pagar">Pagar</string>
+    <string name="cargar_tarjeta">Cargar Tarjeta</string>
+    <string name="Cantidad">Cantidad:</string>
+    <string name="Total">Total:</string>
+    <string name="textview1">TextView</string>
+    <string name="rwcoger">_________</string>
+    <string name="textview3">TextView</string>
+    <string name="textview4">TextView</string>
+</resources>

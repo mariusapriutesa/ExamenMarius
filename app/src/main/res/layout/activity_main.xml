@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2CD632"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="189dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/pizza" />
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_width="326dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:background="#F8F7F7"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/bt_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="Siguiente"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cantidad"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/et_cantidad"
+        android:layout_width="315dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="124dp"
+        android:background="#F8F3F3"
+        android:ems="10"
+        android:hint="@string/cantidad_de_pizzas"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="10sp"
+        android:textColor="#0F1953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp1"
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
